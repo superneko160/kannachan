@@ -1,3 +1,2 @@
-tweepy==4.7.0
 unidic-lite
-mecab-python3
+mecab-python
