@@ -20,7 +20,7 @@ def get_twitterclient():
 # タイムラインの取得
 def get_timeline(client): 
     user = client.get_user(username=codeinfo.TL_PROVIDER_NAME)
-    tweets =client.get_users_tweets(id=user[0]['id'])
+    tweets =client.get_users_tweets(id=user[0]['id'], max_results=codeinfo.TWEET_COUNT)
     return tweets[0]
 
 # ツイートする
